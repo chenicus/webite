@@ -14,8 +14,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  font-family: 'Montserrat';
+  font-weight: 400;
+  font-family: 'Lato';
 }
 
 hr.star-light,
@@ -78,7 +78,7 @@ section h2 {
 }
 
 .btn-xl {
-  padding: 1rem 1.75rem;
+  padding: 0.75rem 1rem;
   font-size: 1.25rem;
 }
 
@@ -107,11 +107,11 @@ section h2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
 }
 
 #mainNav .navbar-brand {
-  color: #fff;
+  color: #5f5f5f;
 }
 
 #mainNav .navbar-nav {
@@ -120,19 +120,19 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
+  color: #5f5f5f;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: white;
+  color: #cac8c8;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
+  color: #cac8c8;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: white;
+  color: #cac8c8;
 }
 
 #mainNav .navbar-toggler {
@@ -142,8 +142,8 @@ section h2 {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
@@ -156,16 +156,16 @@ section h2 {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: white;
+    color: #cac8c8;
+
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
-    background: white;
+    color: #cac8c8;
+
   }
   #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
@@ -216,7 +216,7 @@ header.masthead h2 {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background-color: white;
+  background-color: rgba(24, 188, 156, 0.9);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -327,20 +327,21 @@ form .row:first-child .floating-label-form-group {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #000000;
+  background-color: #5f5f5f;
   color: #fff;
 }
 
 .copyright {
-  background-color: #000000;
+  background-color: #5f5f5f;
 }
 
 a {
-  color: #18BC9C;
+  color: #919496;
 }
 
 a:focus, a:hover, a:active {
-  color: #128f76;
+  color: #5f5f5f;
+  text-decoration: none;
 }
 
 .btn {
@@ -348,11 +349,11 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: black !important;
+  background-color: #18BC9C !important;
 }
 
 .bg-secondary {
-  background-color: #2C3E50 !important;
+  background-color: #f2f2f2eb !important;
 }
 
 .text-primary {
@@ -381,4 +382,83 @@ a:focus, a:hover, a:active {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: #1a252f;
   border-color: #1a252f;
+}
+
+.portfolio-img {
+  box-shadow: 0 4px 17px 0 rgba(0,0, 0, 0.5);
+  transition: all 0.3s ease-out;
+}
+
+.portfolio-img:hover {
+  transform: translateY(-10px) scale(1.005) translateZ(0);
+}
+
+.text-grey1 {
+  color: #5f5f5f;
+}
+
+.text-grey2{
+  color: #919496;
+}
+
+.profile-img {
+    box-shadow: 0 4px 17px 0 rgba(0,0, 0, 0.14);
+    border-radius: 210px;
+}
+
+.text-pop {
+  padding-bottom: 8px;
+  color: #76b79a !important;
+}
+
+.btn-resume {
+  color: #5f5f5f;
+  border-color: #5f5f5f;
+}
+
+.project-description {
+  padding-bottom: 40px;
+}
+
+.contact-icons {
+  color: white;
+}
+
+.contact-icons:hover {
+  color: #919496;
+}
+
+.screenshot-img {
+max-width: 200px;
+}
+
+.top-img {
+  max-width: 300px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.sub-header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.art-size {
+  max-width: 100%;
 }
