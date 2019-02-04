@@ -6,6 +6,9 @@
 
 body {
   font-family: 'Lato';
+  color: 343434;
+  letter-spacing:0.5px;
+  font-weight:200;
 }
 
 h1,
@@ -14,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 200;
   font-family: 'Lato';
 }
 
@@ -39,7 +42,7 @@ hr.star-dark:after {
   padding: 0 0.25em;
   content: '\f005';
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 200;
   font-size: 2em;
 }
 
@@ -62,17 +65,17 @@ hr.star-dark:after {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 1rem 0 5rem 0;
 }
 
 section h2 {
-  font-size: 2.25rem;
+  font-size: 1.2rem;
   line-height: 2rem;
+  letter-spacing: 2px;
 }
 
 @media (min-width: 992px) {
   section h2 {
-    font-size: 3rem;
     line-height: 2.5rem;
   }
 }
@@ -106,12 +109,12 @@ section h2 {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-weight: 700;
-  font-family: 'Roboto';
+  font-weight: 300;
+  font-family: 'Lato';
 }
 
 #mainNav .navbar-brand {
-  color: #5f5f5f;
+  color: #6db5c8;
 }
 
 #mainNav .navbar-nav {
@@ -120,19 +123,19 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #5f5f5f;
+  color: #343434;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #cac8c8;
+  color: #eeeeee;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #cac8c8;
+  color: #343434;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #cac8c8;
+  color: #343434;
 }
 
 #mainNav .navbar-toggler {
@@ -149,6 +152,7 @@ section h2 {
   }
   #mainNav .navbar-brand {
     font-size: 2em;
+    font-weight:200;
     -webkit-transition: font-size 0.3s;
     transition: font-size 0.3s;
   }
@@ -156,11 +160,13 @@ section h2 {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #cac8c8;
+    color: #343434;
+    font-weight:200;
 
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #cac8c8;
+    color: #343434;
+
 
   }
   #mainNav.navbar-shrink {
@@ -169,35 +175,39 @@ section h2 {
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
+
   }
 }
 
 header.masthead {
-  padding-top: calc(6rem + 72px);
-  padding-bottom: 6rem;
+  padding-top: calc(2rem + 72px);
+  padding-bottom: 3rem;
 }
 
 header.masthead h1 {
-  font-size: 3rem;
+  font-size: 2.3rem;
   line-height: 3rem;
+  letter-spacing:2px;
 }
 
 header.masthead h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: 'Lato';
 }
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(6rem + 106px);
-    padding-bottom: 6rem;
+    padding-top: calc(2rem + 106px);
+    padding-bottom: 3rem;
   }
   header.masthead h1 {
-    font-size: 4.75em;
+    font-size: 2.3rem;
     line-height: 4rem;
+    letter-spacing: 3px;
   }
   header.masthead h2 {
-    font-size: 1.75em;
+    font-size: 1.2em;
+    letter-spacing:2px;
   }
 }
 
@@ -257,7 +267,7 @@ header.masthead h2 {
 }
 
 .portfolio-modal .portfolio-modal-dialog h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 @media (min-width: 768px) {
@@ -267,7 +277,7 @@ header.masthead h2 {
     margin: 3rem calc(3rem - 8px);
   }
   .portfolio-modal .portfolio-modal-dialog h2 {
-    font-size: 3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -327,20 +337,21 @@ form .row:first-child .floating-label-form-group {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #5f5f5f;
-  color: #fff;
+  background-color: white;
+  color: black;
 }
 
 .copyright {
-  background-color: #5f5f5f;
+  background-color: white;
+  color: #343434;
 }
 
 a {
-  color: #919496;
+  color: #6db5c8;
 }
 
 a:focus, a:hover, a:active {
-  color: #5f5f5f;
+  color: #6db5c85e;
   text-decoration: none;
 }
 
@@ -349,11 +360,11 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #18BC9C !important;
+  background-color: black !important;
 }
 
 .bg-secondary {
-  background-color: #f2f2f2eb !important;
+  background-color: white !important;
 }
 
 .text-primary {
@@ -375,13 +386,13 @@ a:focus, a:hover, a:active {
 }
 
 .btn-secondary {
-  background-color: #2C3E50;
-  border-color: #2C3E50;
+  background-color: #6db5c8;
+  border-color: #6db5c8;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #1a252f;
-  border-color: #1a252f;
+  background-color: #6db5c85e;
+  border-color: #6db5c85e;
 }
 
 .portfolio-img {
@@ -394,16 +405,17 @@ a:focus, a:hover, a:active {
 }
 
 .text-grey1 {
-  color: #5f5f5f;
+  color: #343434;
 }
 
 .text-grey2{
-  color: #919496;
+  color: #d4d4d4;
 }
 
 .profile-img {
     box-shadow: 0 4px 17px 0 rgba(0,0, 0, 0.14);
     border-radius: 210px;
+    max-width:300px;
 }
 
 .text-pop {
@@ -421,11 +433,11 @@ a:focus, a:hover, a:active {
 }
 
 .contact-icons {
-  color: white;
+  color: #6db5c8;
 }
 
 .contact-icons:hover {
-  color: #919496;
+  color: #6db5c85e;
 }
 
 .screenshot-img {
@@ -461,4 +473,13 @@ max-width: 200px;
 
 .art-size {
   max-width: 100%;
+}
+
+.text-accent {
+  color: #6db5c8;
+}
+
+.prize-text {
+  padding-bottom: 10px;
+  font-size:12px;
 }
