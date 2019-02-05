@@ -434,6 +434,7 @@ a:focus, a:hover, a:active {
 
 .contact-icons {
   color: #6db5c8;
+  font-size: 25px;
 }
 
 .contact-icons:hover {
