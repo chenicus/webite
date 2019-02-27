@@ -396,12 +396,8 @@ a:focus, a:hover, a:active {
 }
 
 .portfolio-img {
-  box-shadow: 0 4px 17px 0 rgba(0,0, 0, 0.5);
-  transition: all 0.3s ease-out;
-}
-
-.portfolio-img:hover {
-  transform: translateY(-10px) scale(1.005) translateZ(0);
+  max-width: 150px;
+  box-shadow: 0 4px 17px 0 rgba(0,0, 0, 0.14);
 }
 
 .text-grey1 {
@@ -483,4 +479,8 @@ max-width: 200px;
 .prize-text {
   padding-bottom: 10px;
   font-size:12px;
+}
+
+.team-image {
+  max-width: 500px;
 }
